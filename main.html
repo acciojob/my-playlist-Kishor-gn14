@@ -4,7 +4,6 @@
     <style>
       body {
         background-color: rgb(204, 204, 204);
-        border-style: solid;
         padding: 20px;
       }
       h1,
@@ -21,16 +20,21 @@
       a {
         text-decoration: none;
         target: _blank;
-		  color:black;
+        color: black;
+      }
+      section {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
       }
       div {
+        height: 450px;
+        width: 400px;
         background-color: white;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 450px;
-        width: 400px;
         border-style: solid;
       }
       .player_one,
@@ -51,19 +55,22 @@
       <li><a href="#" target="_blank">Song 5</a></li>
     </ul>
     <h2>Now Playing...</h2>
-    <div>
-      <video
-        class="player_one"
-        src="https://www.w3schools.com/tags/movie.mp4"
-        controls
-      ></video>
-      <h2>MP3 songs</h2>
-      <audio
-        class="player_two"
-        src="https://www.pagalworld.com.se/files/download/id/64630"
-        controls
-      ></audio>
-    </div>
+    <section>
+      <div>
+        <video
+          class="player_one"
+          src="https://www.w3schools.com/tags/movie.mp4"
+          controls
+        ></video>
+        <h2>MP3 songs</h2>
+        <audio
+          class="player_two"
+          src="https://www.pagalworld.com.se/files/download/id/64630.mp3"
+          controls
+        ></audio>
+      </div>
+    </section>
+
     <!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js"></script>
   </body>
